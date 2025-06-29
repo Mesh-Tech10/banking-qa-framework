@@ -139,31 +139,31 @@ python setup_test_db.py
 ```
 
 # Usage
-# Running Tests
-# Run all UI tests:
+## Running Tests
+### Run all UI tests:
 ```bash
 pytest tests/ui/ -v --html=reports/ui_report.html
 ```
-# Run API tests:
+### Run API tests:
 ```bash
 pytest tests/api/ -v --html=reports/api_report.html
 ```
-# Run security tests:
+### Run security tests:
 ```bash
 pytest tests/security/ -v --html=reports/security_report.html
 ```
-# Run specific test:
+### Run specific test:
 ```bash
 pytest tests/ui/test_login.py::test_valid_login -v
 ```
-# Run tests with specific markers:
+### Run tests with specific markers:
 ```bash
 
 pytest -m "smoke" -v  # Run smoke tests
 pytest -m "regression" -v  # Run regression tests
 pytest -m "security" -v  # Run security tests
 ```
-# Test Configuration
+### Test Configuration
 Edit ```config/test_config.yaml:```
 
 ```yaml
@@ -190,7 +190,7 @@ browser:
   window_size: "1920,1080"
 ```
 # Test Examples
-# UI Test Example
+## UI Test Example
 ```python
 
 # tests/ui/test_login.py
@@ -223,7 +223,7 @@ class TestLogin(BaseUITest):
         assert login_page.is_error_message_displayed()
         assert "Invalid credentials" in login_page.get_error_message()
 ```
-# API Test Example
+## API Test Example
 ```python
 
 # tests/api/test_account_api.py
@@ -259,7 +259,7 @@ class TestAccountAPI(BaseAPITest):
         assert "Unauthorized" in response.json()["error"]
 ```
 
-# Database Test Example
+## Database Test Example
 ```python
 
 # tests/database/test_transactions.py
@@ -292,31 +292,31 @@ class TestTransactionDatabase(BaseDatabaseTest):
         assert audit_logs[-1]["amount"] == 100.00
 ```
 # Security Testing Features
-# Authentication Testing
+## Authentication Testing
 - Multi-factor authentication validation
 - Password policy enforcement
 - Session management
 - Account lockout mechanisms
 
-# Authorization Testing
+## Authorization Testing
 - Role-based access control
 - Permission validation
 - Privilege escalation prevention
 
-# Data Protection
+## Data Protection
 - Encryption validation
 - PII data masking
 - Secure data transmission
 - Data retention compliance
 
-# Compliance Testing
+## Compliance Testing
 - PCI DSS requirements
 - SOX compliance
 - GDPR data protection
 - Banking regulations (Basel III, etc.)
 
 # Performance Testing
-# Load Testing
+## Load Testing
 ```python
 # tests/performance/test_load.py
 from locust import HttpUser, task, between
@@ -347,18 +347,18 @@ class BankingLoadTest(HttpUser):
         })
 ```
 # Reporting
-# HTML Reports
+## HTML Reports
 Generate detailed HTML reports with:
 ```bash
 pytest --html=reports/test_report.html --self-contained-html
 ```
-# Allure Reports
+## Allure Reports
 Generate interactive Allure reports:
 ```bash
 pytest --alluredir=reports/allure
 allure serve reports/allure
 ```
-# Custom Reports
+## Custom Reports
 The framework generates custom banking-specific reports including:
 - Security vulnerability summary
 - Compliance test results
@@ -366,7 +366,7 @@ The framework generates custom banking-specific reports including:
 - Transaction validation results
 
 # CI/CD Integration
-# GitHub Actions Example
+## GitHub Actions Example
 ```yaml
 # .github/workflows/banking_tests.yml
 name: Banking QA Tests
@@ -399,50 +399,50 @@ jobs:
         path: reports/
 ```
 # Best Practices Implemented
-# Test Design
+## Test Design
 - Page Object Model (POM) for UI tests
 - Data-driven testing with external test data
 - Parameterized tests for multiple scenarios
 - Independent and atomic tests
 
-# Security
+## Security
 - Secure credential management
 - Environment-specific configurations
 - Encrypted test data
 - Compliance validation
 
-# Maintainability
+## Maintainability
 - Modular framework design
 - Reusable components
 - Clear documentation
 - Version control integration
 
 # Supported Banking Features
-# Account Management
+## Account Management
 - Account creation and verification
 - Balance inquiries
 - Account statements
 - Account closure
 
-# Transaction Processing
+## Transaction Processing
 - Fund transfers
 - Bill payments
 - Deposit processing
 - Transaction history
 
-# Security Features
+## Security Features
 - User authentication
 - Transaction authorization
 - Fraud detection
 - Audit logging
 
-# Administrative Functions
+## Administrative Functions
 - User management
 - System configuration
 - Reporting and analytics
 - Compliance monitoring
 
-# Contributing
+## Contributing
 - Fork the repository
 - Create a feature branch
 - Add tests for new functionality
