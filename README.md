@@ -27,75 +27,49 @@ A comprehensive automated testing framework designed specifically for banking ap
 ```
 banking-qa-framework/
 ├── tests/
+│   ├── __init__.py
 │   ├── ui/
 │   │   ├── test_login.py
-│   │   ├── test_account_operations.py
-│   │   ├── test_transactions.py
-│   │   ├── test_security.py
-│   │   └── test_user_management.py
+│   │   └── _init__.py
 │   ├── api/
-│   │   ├── test_auth_api.py
 │   │   ├── test_account_api.py
-│   │   ├── test_transaction_api.py
-│   │   └── test_security_api.py
-│   ├── database/
-│   │   ├── test_data_integrity.py
-│   │   ├── test_transactions.py
-│   │   └── test_audit_logs.py
-│   ├── security/
-│   │   ├── test_authentication.py
-│   │   ├── test_authorization.py
-│   │   ├── test_encryption.py
-│   │   └── test_compliance.py
+│   │   └── _init__.py
+│   ├── database
+│   ├── security
 │   └── performance/
-│       ├── test_load.py
-│       ├── test_stress.py
-│       └── test_endurance.py
+│       └── test_load.py
 ├── framework/
 │   ├── __init__.py
 │   ├── base_test.py
 │   ├── page_objects/
 │   │   ├── login_page.py
 │   │   ├── dashboard_page.py
-│   │   ├── account_page.py
-│   │   └── transaction_page.py
+│   │   └── __init__.py
 │   ├── api_client/
 │   │   ├── auth_client.py
 │   │   ├── account_client.py
-│   │   └── transaction_client.py
-│   ├── database/
-│   │   ├── db_connection.py
-│   │   └── queries.py
+│   │   └── __init__.py
+│   ├── database
 │   ├── utils/
 │   │   ├── config.py
 │   │   ├── data_generator.py
-│   │   ├── encryption_utils.py
-│   │   └── report_utils.py
-│   └── fixtures/
-│       ├── browser_fixtures.py
-│       ├── api_fixtures.py
-│       └── database_fixtures.py
-├── data/
-│   ├── test_users.json
-│   ├── test_accounts.json
-│   ├── test_transactions.json
-│   └── sql_scripts/
+│   │   └── __init__.py
+│   └── fixtures
+├── data
 ├── config/
-│   ├── test_config.yaml
-│   ├── staging_config.yaml
-│   └── prod_config.yaml
+│   └── test_config.yaml
 ├── reports/
-│   ├── html/
-│   ├── allure/
+│   ├── smoke_results.txt
+│   ├── smoke_report.html
 │   └── screenshots/
-├── docker/
-│   ├── Dockerfile
-│   └── docker-compose.yml
+├── venv/
+│   ├── Include/
+│   ├── Scripts/
+│   ├── Lib/
+|   └── pyvenv.cfg
 ├── .github/
 │   └── workflows/
-│       ├── ui_tests.yml
-│       ├── api_tests.yml
-│       └── security_tests.yml
+│    
 ├── requirements.txt
 ├── pytest.ini
 ├── conftest.py
