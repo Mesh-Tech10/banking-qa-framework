@@ -1,0 +1,28 @@
+app:
+  base_url: "https://demo-bank.com"
+  api_base_url: "https://api.demo-bank.com"
+  timeout: 30
+
+database:
+  host: "localhost"
+  port: 5432
+  name: "banking_test"
+  user: "test_user"
+  password: "test_password"
+
+security:
+  enable_ssl_verification: true
+  encryption_key: "test-encryption-key-123"
+
+browser:
+  name: "chrome"
+  headless: false
+  window_size: "1920,1080"
+
+test_users:
+  valid_user:
+    username: "testuser123"
+    password: "TestPass123!"
+  admin_user:
+    username: "admin"
+    password: "AdminPass123!"

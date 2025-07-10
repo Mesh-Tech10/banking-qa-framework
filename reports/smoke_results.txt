@@ -1,0 +1,110 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.8, pytest-7.4.0, pluggy-1.6.0 -- C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.11.8', 'Platform': 'Windows-10-10.0.26100-SP0', 'Packages': {'pytest': '7.4.0', 'pluggy': '1.6.0'}, 'Plugins': {'allure-pytest': '2.13.2', 'html': '3.2.0', 'metadata': '3.1.1'}}
+rootdir: C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework
+configfile: pytest.ini
+plugins: allure-pytest-2.13.2, html-3.2.0, metadata-3.1.1
+collecting ... collected 14 items / 9 deselected / 5 selected
+
+tests/api/test_account_api.py::TestAccountAPI::test_api_framework_setup PASSED [ 20%]
+tests/api/test_account_api.py::test_imports_working PASSED               [ 40%]
+tests/ui/test_login.py::TestLogin::test_valid_login PASSED               [ 60%]
+tests/ui/test_login.py::TestLogin::test_page_elements_exist PASSED       [ 80%]
+tests/ui/test_login.py::test_framework_setup PASSED                      [100%]
+
+============================== warnings summary ===============================
+tests\api\test_account_api.py:14
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:14: PytestUnknownMarkWarning: Unknown pytest.mark.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+tests\api\test_account_api.py:15
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:15: PytestUnknownMarkWarning: Unknown pytest.mark.api - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.api
+
+tests\api\test_account_api.py:23
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:23: PytestUnknownMarkWarning: Unknown pytest.mark.regression - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.regression
+
+tests\api\test_account_api.py:24
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:24: PytestUnknownMarkWarning: Unknown pytest.mark.api - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.api
+
+tests\api\test_account_api.py:33
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:33: PytestUnknownMarkWarning: Unknown pytest.mark.security - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.security
+
+tests\api\test_account_api.py:34
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:34: PytestUnknownMarkWarning: Unknown pytest.mark.api - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.api
+
+tests\api\test_account_api.py:52
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:52: PytestUnknownMarkWarning: Unknown pytest.mark.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+tests\api\test_account_api.py:53
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\api\test_account_api.py:53: PytestUnknownMarkWarning: Unknown pytest.mark.api - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.api
+
+tests\performance\test_load.py:51
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\performance\test_load.py:51: PytestUnknownMarkWarning: Unknown pytest.mark.performance - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.performance
+
+tests\performance\test_load.py:65
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\performance\test_load.py:65: PytestUnknownMarkWarning: Unknown pytest.mark.performance - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.performance
+
+tests\performance\test_load.py:66
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\performance\test_load.py:66: PytestUnknownMarkWarning: Unknown pytest.mark.slow - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.slow
+
+tests\performance\test_load.py:95
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\performance\test_load.py:95: PytestUnknownMarkWarning: Unknown pytest.mark.performance - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.performance
+
+tests\performance\test_load.py:138
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\performance\test_load.py:138: PytestUnknownMarkWarning: Unknown pytest.mark.performance - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.performance
+
+tests\performance\test_load.py:139
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\performance\test_load.py:139: PytestUnknownMarkWarning: Unknown pytest.mark.stress - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.stress
+
+tests\ui\test_login.py:15
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:15: PytestUnknownMarkWarning: Unknown pytest.mark.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+tests\ui\test_login.py:16
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:16: PytestUnknownMarkWarning: Unknown pytest.mark.ui - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.ui
+
+tests\ui\test_login.py:43
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:43: PytestUnknownMarkWarning: Unknown pytest.mark.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+tests\ui\test_login.py:44
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:44: PytestUnknownMarkWarning: Unknown pytest.mark.ui - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.ui
+
+tests\ui\test_login.py:54
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:54: PytestUnknownMarkWarning: Unknown pytest.mark.regression - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.regression
+
+tests\ui\test_login.py:55
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:55: PytestUnknownMarkWarning: Unknown pytest.mark.ui - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.ui
+
+tests\ui\test_login.py:81
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:81: PytestUnknownMarkWarning: Unknown pytest.mark.security - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.security
+
+tests\ui\test_login.py:82
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:82: PytestUnknownMarkWarning: Unknown pytest.mark.ui - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.ui
+
+tests\ui\test_login.py:97
+  C:\Users\meshw\Desktop\My-Projects\02-banking-qa-framework\banking-qa-framework\tests\ui\test_login.py:97: PytestUnknownMarkWarning: Unknown pytest.mark.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================ 5 passed, 9 deselected, 23 warnings in 9.55s =================
