@@ -67,12 +67,13 @@ banking-qa-framework/
 │   ├── Scripts/
 │   ├── Lib/
 |   └── pyvenv.cfg
-├── .github/
-│   └── workflows/
-│    
+├── .gitattributes
+├── .gitignore
 ├── requirements.txt
-├── pytest.ini
 ├── conftest.py
+├── chrome_check.py
+├── manual_chromedriver_setup.py
+├── LICENSE
 └── README.md
 ```
 
@@ -118,18 +119,6 @@ python setup_test_db.py
 ```bash
 pytest tests/ui/ -v --html=reports/ui_report.html
 ```
-### Run API tests:
-```bash
-pytest tests/api/ -v --html=reports/api_report.html
-```
-### Run security tests:
-```bash
-pytest tests/security/ -v --html=reports/security_report.html
-```
-### Run specific test:
-```bash
-pytest tests/ui/test_login.py::test_valid_login -v
-```
 ### Run tests with specific markers:
 ```bash
 
@@ -141,10 +130,9 @@ pytest -m "security" -v  # Run security tests
 Edit ```config/test_config.yaml:```
 
 ```yaml
-
 app:
-  base_url: "https://your-banking-app.com"
-  api_base_url: "https://api.your-banking-app.com"
+  base_url: "https://demo-bank.com"
+  api_base_url: "https://api.demo-bank.com"
   timeout: 30
 
 database:
@@ -156,12 +144,20 @@ database:
 
 security:
   enable_ssl_verification: true
-  encryption_key: "your-encryption-key"
-  
+  encryption_key: "test-encryption-key-123"
+
 browser:
-  name: "chrome"  # chrome, firefox, edge
+  name: "chrome"
   headless: false
   window_size: "1920,1080"
+
+test_users:
+  valid_user:
+    username: ""
+    password: ""
+  admin_user:
+    username: ""
+    password: ""
 ```
 # Test Examples
 ## UI Test Example
@@ -374,7 +370,6 @@ jobs:
 ```
 # Best Practices Implemented
 ## Test Design
-- Page Object Model (POM) for UI tests
 - Data-driven testing with external test data
 - Parameterized tests for multiple scenarios
 - Independent and atomic tests
