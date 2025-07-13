@@ -76,13 +76,6 @@ banking-qa-framework/
 ├── LICENSE
 └── README.md
 ```
-
-# Prerequisites
-- Python 3.8+
-- Chrome/Firefox browser
-- Docker (optional)
-- Access to banking application (staging/test environment)
-
 # Installation Steps
 1. Clone the repository
 ```bash
@@ -98,7 +91,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-4. ownload WebDriver
+4. Download WebDriver
 ```bash
 # ChromeDriver will be automatically managed by webdriver-manager
 # Or manually download from: https://chromedriver.chromium.org/
