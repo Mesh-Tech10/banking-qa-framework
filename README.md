@@ -1,8 +1,4 @@
 # Banking Application QA Testing Framework
-
-Comprehensive automated testing framework designed specifically for banking applications, ensuring security, reliability, and compliance with financial regulations.
-
-# Overview
 A comprehensive automated testing framework designed specifically for banking applications, ensuring security, reliability, and compliance with financial regulations.
 
 # Features
